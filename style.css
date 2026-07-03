@@ -1,4 +1,4 @@
-
+/* Body */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 150%;
@@ -6,20 +6,22 @@ body {
     padding: 0;
 }
 
-
+/* Content */
 .content {
     font-family: Arial, sans-serif;
     font-size: 16px;
 }
 
-
+/* Header */
 header {
     background-color: #4CAF50;
     padding: 20px;
 }
 
-
+/* Nav */
 nav {
+    display: inline-block;
+    width: 80%;
     background-color: #333;
 }
 
@@ -29,11 +31,14 @@ nav ul {
     padding: 0;
 }
 
+/* Comment out old li rule */
+/*
 nav li {
-    display: inline-block;
-    width: 120px;
-    text-align: center;
+  display: inline-block;
+  width: 120px;
+  text-align: center;
 }
+*/
 
 nav a {
     color: white;
@@ -42,14 +47,19 @@ nav a {
     padding: 10px;
 }
 
+/* Images inside nav */
+nav img {
+    width: 10%;
+}
 
+/* Main */
 main {
     background-color: #f4f4f4;
     font-size: 15px;
     padding: 20px;
 }
 
-
+/* Footer */
 footer {
     background-color: #222;
     color: white;
@@ -57,14 +67,34 @@ footer {
     padding: 15px;
 }
 
-
+/* h1 */
 h1 {
     text-align: center;
     font-family: 'Georgia', serif;
     color: white;
 }
 
-
+/* p */
 p {
     line-height: 1.6;
+}
+
+/* Grid */
+.grid {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    justify-content: space-around;
+    align-items: center;
+    row-gap: 20px;
+}
+
+.grid img {
+    width: 100%;
+}
+
+/* Flex */
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
